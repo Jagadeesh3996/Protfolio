@@ -1,0 +1,366 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black : rgb(0, 0, 0);
+    --white : rgb(255, 255, 255);
+    --off-white : rgba(255, 255, 255, 0.8);
+    --red : rgb(255, 0, 0);
+    --green : rgb(0, 255, 0);
+    --organge : rgb(216, 156, 14);
+    --blue : rgb(51, 0, 255);
+    --gray : rgb(127, 127, 127);
+    --pink : rgba(225, 192, 203, 0.7);
+}
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* Header Section CSS */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1111;
+    width: 100%;
+    height: 7vh;
+    box-shadow: 0 0 20px var(--black);
+    background-color: var(--off-white);
+}
+.header h1{
+    margin-left: 50px;
+    text-shadow: 0 0 15px var(--black);
+    color : var(--white);
+    font-size: 40px;
+}
+.header h1:hover{
+    color: var(--black);
+    text-shadow: none;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-bar li a{
+    margin: 0 20px;
+    padding: 8px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.nav-bar li a:hover{
+    color: var(--green);
+    box-shadow: 0 0 20px var(--green);
+    border-radius: 10px;
+}
+.nav-bar li a:active{
+    color: var(--red);
+}
+
+/* Home Section CSS */
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+    z-index: 1;
+}
+.social{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    padding: 20px;
+}
+.social a{
+    padding: 10px;
+}
+.social a:hover{
+    color: var(--green);
+}
+.social a:active{
+    color: var(--red);
+}
+.home-text{
+    width: 45%;
+    padding: 10px;
+    font-size: 25px;
+}
+.home-text p,
+.home-text h1 {
+    margin: 20px 0;
+}
+.btn{
+    background-color: var(--red);
+    color: var(--white);
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 15px;
+}
+.btn:hover{
+    color: var(--black);
+    background-color: var(--green);
+}
+.btn:active{
+    color: var(--white);
+}
+.home-img{
+    width: 45%;
+    text-align: center;
+}
+.home-img img{
+    width: 60%;
+    border-radius: 25%;
+    margin: 20px;
+    box-shadow: 0 0 50px var(--green);
+}
+
+/* About Section CSS */
+
+.about{
+    width: 100%;
+    height: 100vh;
+    padding: 5%;
+    z-index: 1;
+}
+.about h1{
+    text-align: center;
+    font-size: 40px;
+}
+.about h2{
+    font-size: 30px;
+    padding: 15px 0;
+}
+.information{
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.about-text,
+.info-box{
+    padding: 20px;
+    font-size: 25px;
+    box-shadow: 0 0 15px var(--blue);
+    border-radius: 20px;
+    margin: 30px;
+}
+.about-text{
+    margin: 0 50px;
+}
+.abtn{
+    margin-left: 43%;
+}
+
+/* Education Section CSS */
+
+.education{
+    width: 100%;
+    height: 100vh;
+    padding: 5%;
+    z-index: 1;
+}
+.heading{
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    color: var(--organge);
+}
+.education-content,
+.certification,
+.achievement{
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.education-box,
+.certification-box,
+.achievement-box{
+    padding: 20px;
+    font-size: 20px;
+    box-shadow: 0 0 15px var(--green);
+    border-radius: 20px;
+    margin: 30px;
+}
+
+/* Skills Section CSS */
+
+.skills{
+    width: 100%;
+    padding: 5%;
+    z-index: 1;
+}
+.skills h1{
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    color: var(--green);
+}
+.skills-content{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.skills-box img{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--organge);
+}
+
+/* Projects Section CSS */
+
+.projects{
+    width: 100%;
+    padding: 5%;
+    z-index: 1;
+}
+.projects h1{
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    color: var(--blue);
+}
+.projects-content{
+    margin-top: 20px;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.projects-box{    
+    width: 45%;
+    height: 45%;
+    margin: 5px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px var(--organge);
+}
+.projects-box a{
+    position: absolute;
+    margin-top: -8%;
+    margin-left: -5%;
+    z-index: 111;
+}
+.box{
+    height: 100%;
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--pink);
+}
+.box:hover{
+    opacity: 0;
+}
+.box p{
+    margin: 20px 0px 30px;
+    font-weight: 600;
+}
+.box1{
+    background-image: url(./images/foodplace.png);
+    background-size: cover;
+    background-position: center;
+}
+.box2{
+    background-image: url(./images/api.png);
+    background-size: cover;
+    background-position: center;
+}
+.box3{
+    background-image: url(./images/to-do-list.png);
+    background-size: cover;
+    background-position: center;
+}
+.box4{
+    background-image: url(./images/car.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* Contact Section CSS */
+
+.contact{
+    width: 100%;
+    height: calc(100vh-45px);
+    padding: 5%;
+    z-index: 1;
+    text-align: center;
+}
+.contact h1{
+    font-size: 40px;
+}
+.contact-form{
+    margin: 20px;
+    padding: 20px;
+}
+.contact-form input,
+textarea{
+    width: 60%;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--gray);
+    color: var(--white);
+}
+textarea{
+    margin-bottom: 30px;
+}
+.contact-form input::placeholder,
+textarea::placeholder{
+    color: var(--black);
+}
+.contact-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    padding: 20px;
+}
+.contact-social a{
+    padding: 10px;
+}
+.contact-social a:hover{
+    color: var(--green);
+}
+.contact-social a:active{
+    color: var(--red);
+}
+
+/* Footer Section CSS */
+
+.footer{
+    width: 100%;
+    height: 45px;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+}
